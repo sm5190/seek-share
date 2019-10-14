@@ -1,5 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
+
+
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,6 +24,7 @@
 		CSS
 		============================================= -->
 		<link rel="stylesheet" href="css/linearicons.css">
+
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/magnific-popup.css">
@@ -29,6 +33,8 @@
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/jquery-ui.css">
 		<link rel="stylesheet" href="css/main.css">
+
+
 	</head>
 	<body>
 		<header id="header" id="home">
@@ -61,14 +67,101 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="topics.html">topics</a></li>
 
-							<li><a href="login.html">Login</a></li>
-							 <li><a href="admin.html">Admin</a></li>
+
 							 <li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav><!-- #nav-menu-container -->
 				</div>
 			</div>
 		</header><!-- #header -->
+		<!-- SIGN UP MODAL -->
+		<div id="modal-signup" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span>Sign up</h4>
+					</div>
+					<div class="modal-body">
+						<form id="signup-form" role="form">
+
+							<div class="form-group">
+								<label for="usrname"><span class="glyphicon glyphicon-user"></span>Email ID</label>
+								<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+								<input type="text" class="form-control" id="psw" placeholder="Enter password">
+							</div>
+
+							<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Sign Up</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+<!--Account details-->
+<div id="modal-account" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span>Account Details</h4>
+			</div>
+			<div class="modal-body">
+				<div id="account-detials"></div>
+	    </div>
+		</div>
+
+		</div>
+	</div>
+
+	<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+	<!-- Modal content-->
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+		</div>
+		<div class="modal-body">
+			<form id="login-form" role="form">
+				<div class="form-group">
+					<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+					<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+					<input type="text" class="form-control" id="psw" placeholder="Enter password">
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="" checked>Remember me</label>
+				</div>
+				<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			<p>Not a member? <a href="Register.html">Sign Up</a></p>
+
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
 
 		<!-- start banner Area -->
 		<section class="banner-area relative" id="home">
@@ -104,7 +197,6 @@
 									Usage of the Internet is becoming more common due to rapid advancement
 									of technology.
 								</p>
-								<a href="Register.html">Join Now</a>
 							</div>
 						</div>
 					</div>
@@ -117,7 +209,7 @@
 								<p>
 									learn your desired topic that can benefit you the most in the limited time you got.
 								</p>
-								<a href="Register.html">Join Now</a>
+
 							</div>
 						</div>
 					</div>
@@ -130,7 +222,7 @@
 								<p>
 									Share your video tutorial or document content to benefit people all over the world.
 								</p>
-								<a href="Register.html">Join Now</a>
+
 							</div>
 						</div>
 					</div>
@@ -138,7 +230,6 @@
 			</div>
 		</section>
 		<!-- End feature Area -->
-
 
 			<!-- Start info Area -->
 			<section class="info-area pb-120">
@@ -215,139 +306,6 @@
 			</section>
 			<!-- End search-course Area -->
 
-			<!-- Start review Area -->
-			<section class="review-area section-gap relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row">
-						<div class="active-review-carusel">
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<img src="img/r1.png" alt="">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Fannie Rowe</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-							<div class="single-review item">
-								<div class="title justify-content-start d-flex">
-									<a href="#"><h4>Hulda Sutton</h4></a>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
-								<p>
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End review Area -->
-
 
 
 			<!-- start footer Area -->
@@ -422,7 +380,101 @@
 				</div>
 			</footer>
 			<!-- End footer Area -->
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
 
+						<div class="col-lg-2 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Quick links</h4>
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="topics.html">Topics</a></li>
+
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Newsletter</h4>
+								<p>Stay update with our latest</p>
+								<div class="" id="mc_embed_signup">
+									 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+										<div class="input-group">
+											<input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
+											<div class="input-group-btn">
+												<button class="btn btn-default" type="submit">
+													<span class="lnr lnr-arrow-right"></span>
+												</button>
+											</div>
+												<div class="info"></div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom row align-items-center justify-content-between">
+						<p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Seek & Share <i class="fa fa-heart-o" aria-hidden="true"></i>  <a  target="_blank"></a>
+		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						<div class="col-lg-6 col-sm-12 footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-storage.js"></script>
+
+
+		<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyC0tnhrRWvgLQw9EBaTQFy7d4KdCihZ64E",
+		authDomain: "authentication1-729ec.firebaseapp.com",
+		databaseURL: "https://authentication1-729ec.firebaseio.com",
+		projectId: "authentication1-729ec",
+		storageBucket: "",
+		messagingSenderId: "428580526475",
+		appId: "1:428580526475:web:e7ec0b14970f361a08f78e"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		const auth= firebase.auth();
+		const db=firebase.firestore();
+
+		</script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+
+		<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyBJiycczyJzRhuUYLgfN6YO3QmGCRh0aU0",
+		authDomain: "seeknshare-fd878.firebaseapp.com",
+		databaseURL: "https://seeknshare-fd878.firebaseio.com",
+		projectId: "seeknshare-fd878",
+		storageBucket: "seeknshare-fd878.appspot.com",
+		messagingSenderId: "383874502946",
+		appId: "1:383874502946:web:1eeb6c06707ecdca86557b"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		var storage = firebase.storage();
+		var storageRef = storage.ref();
+		</script>
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -438,5 +490,16 @@
 			<script src="js/owl.carousel.min.js"></script>
 			<script src="js/mail-script.js"></script>
 			<script src="js/main.js"></script>
+
+			 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+			<!--my scripts-->
+
+		<script src="scripts/index.js"></script>
+		<script src="scripts/index2.js"></script>
+		<script src="scripts/auth.js"></script>
+
+			 <!--end my scripts-->
+
 		</body>
-	</html>
+		</html>

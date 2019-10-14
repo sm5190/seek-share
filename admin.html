@@ -1,128 +1,135 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
-  <!-- Mobile Specific Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="img/fav.png">
-  <!-- Author Meta -->
-  <meta name="author" content="colorlib">
-  <!-- Meta Description -->
-  <meta name="description" content="">
-  <!-- Meta Keyword -->
-  <meta name="keywords" content="">
-  <!-- meta character set -->
-  <meta charset="UTF-8">
-  <!-- Site Title -->
-  <title>Seek & Share</title>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Seek & Share</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <!--
-    CSS
-    ============================================= -->
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/admin.css">
-  </head>
-  <body>
-    <header id="header" id="home">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header id="header" id="home">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+
+						</div>
+						<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+
+						</div>
+					</div>
+				</div>
+		</div>
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/Screenshot_2019-09-07 Wix Logo Maker.png" alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">Submissions</a></li>
+							<li><a href="about.html">Messages</a></li>
+						</ul>
+					</nav><!-- #nav-menu-container -->
+				</div>
+			</div>
+		</header><!-- #header -->
+<body>
+			<!-- start banner Area -->
+			<section class="banner-area relative about-banner" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+							Admin	Home
+							</h1>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+			<table class="table">
+			  <thead class="thead-light">
+			    <tr>
+
+			      <th scope="col">Name</th>
+			      <th scope="col">Messages</th>
+
+			    </tr>
+			  </thead>
+			  <tbody id="scorelist">
+				</tbody>
+			</table>
 
 
-      <div class="header-top">
+			<ol >
+		  </ol>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script >
+	var firebaseConfig = {
+	  apiKey: "AIzaSyB9xxG1mWJwFoIC4hKBzloRFNiPb6Wvfi4",
+	  authDomain: "contact-cc139.firebaseapp.com",
+	  databaseURL: "https://contact-cc139.firebaseio.com",
+	  projectId: "contact-cc139",
+	  storageBucket: "",
+	  messagingSenderId: "409761899892",
+	  appId: "1:409761899892:web:711dd2cdea022d9a3eb821"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
 
-              <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-              <a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+953 012 3654 896</span></a>
-              <a href="mailto:support@seek&share.com"><span class="lnr lnr-envelope"></span> <span class="text">support@seek&share.org</span></a>
-            </div>
-          </div>
-        </div>
-    </div>
-      <div class="container main-menu">
-        <div class="row align-items-center justify-content-between d-flex">
-          <div id="logo">
-            <a href="index.html"><img src="img/Screenshot_2019-09-07 Wix Logo Maker.png" alt="" title="" /></a>
-          </div>
-          <nav id="nav-menu-container">
-            <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="topics.html">topics</a></li>
-
-              <li><a href="login.html">Login</a></li>
-               <li><a href="admin.html">Admin</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav><!-- #nav-menu-container -->
-        </div>
-      </div>
-
-    </header><!-- #header -->
-    <section class="banner-area relative about-banner" id="home">
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="about-content col-lg-12">
-      
+	</script>
 
 
-
-          </div>
-        </div>
-      </div>
-    </section>
+	<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+	  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
 
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Email address</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember password</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<script src="scripts/admin2.js"></script>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.tabs.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/main.js"></script>
 </body>
+</html>

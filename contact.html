@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -21,6 +22,7 @@
 		CSS
 		============================================= -->
 		<link rel="stylesheet" href="css/linearicons.css">
+
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/magnific-popup.css">
@@ -29,6 +31,7 @@
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/jquery-ui.css">
 		<link rel="stylesheet" href="css/main.css">
+
 	</head>
 	<body>
 		<header id="header" id="home">
@@ -61,14 +64,102 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="topics.html">topics</a></li>
 
-							<li><a href="login.html">Login</a></li>
-							 <li><a href="admin.html">Admin</a></li>
+
+
 							 <li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav><!-- #nav-menu-container -->
 				</div>
 			</div>
 		</header><!-- #header -->
+		<!-- SIGN UP MODAL -->
+		<div id="modal-signup" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span>Sign up</h4>
+					</div>
+					<div class="modal-body">
+						<form id="signup-form" role="form">
+
+							<div class="form-group">
+								<label for="usrname"><span class="glyphicon glyphicon-user"></span>Email ID</label>
+								<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+								<input type="text" class="form-control" id="psw" placeholder="Enter password">
+							</div>
+
+							<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Sign Up</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+<!--Account details-->
+<div id="modal-account" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span>Account Details</h4>
+			</div>
+			<div class="modal-body">
+				<div id="account-detials"></div>
+	    </div>
+		</div>
+
+		</div>
+	</div>
+
+	<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+	<!-- Modal content-->
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+		</div>
+		<div class="modal-body">
+			<form id="login-form" role="form">
+				<div class="form-group">
+					<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+					<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+					<input type="text" class="form-control" id="psw" placeholder="Enter password">
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="" checked>Remember me</label>
+				</div>
+				<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			<p>Not a member? <a href="Register.html">Sign Up</a></p>
+
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
 
 			<!-- start banner Area -->
 			<section class="banner-area relative about-banner" id="home">
@@ -90,7 +181,7 @@
 			<section class="contact-page-area section-gap">
 				<div class="container">
 					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+
 						<div class="col-lg-4 d-flex flex-column address-wrap">
 							<div class="single-contact-address d-flex flex-row">
 								<div class="icon">
@@ -122,25 +213,33 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-8">
-							<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
-								<div class="row">
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-										<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
-									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
-									</div>
-									<div class="col-lg-12">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary" style="float: right;">Send Message</button>
-									</div>
-								</div>
-							</form>
+						<div class="col-lg-8" class="contact">
+						<div class="alert"></div>
+			        <form id="contactForm">
+			          <p>
+			            <label>Name</label>
+			            <input type="text" name="name" id="name" required>
+			          </p>
+			          <p>
+			            <label>Company</label>
+			            <input type="text" name="company" id="company">
+			          </p>
+			          <p>
+			            <label>Email Address</label>
+			            <input type="email" name="email" id="email" required>
+			          </p>
+			          <p>
+			            <label>Phone Number</label>
+			            <input type="text" name="phone" id="phone">
+			          </p>
+			          <p class="full">
+			            <label>Message</label>
+			            <textarea name="message" rows="5" id="message"></textarea>
+			          </p>
+			          <p class="full">
+			            <button type="submit">Submit</button>
+			          </p>
+			        </form>
 						</div>
 					</div>
 				</div>
@@ -158,8 +257,8 @@
 								<ul>
 									<li><a href="about.html">About</a></li>
 									<li><a href="topics.html">Topics</a></li>
-									<li><a href="login.html">Log in</a></li>
-									<li><a href="contact,html">Contact</a></li>
+
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -219,8 +318,56 @@
 				</div>
 			</footer>
 			<!-- End footer Area -->
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-storage.js"></script>
 
 
+			<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+			apiKey: "AIzaSyC0tnhrRWvgLQw9EBaTQFy7d4KdCihZ64E",
+			authDomain: "authentication1-729ec.firebaseapp.com",
+			databaseURL: "https://authentication1-729ec.firebaseio.com",
+			projectId: "authentication1-729ec",
+			storageBucket: "",
+			messagingSenderId: "428580526475",
+			appId: "1:428580526475:web:e7ec0b14970f361a08f78e"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const auth= firebase.auth();
+			const db=firebase.firestore();
+
+			</script>
+			<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+
+			<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+			apiKey: "AIzaSyBJiycczyJzRhuUYLgfN6YO3QmGCRh0aU0",
+			authDomain: "seeknshare-fd878.firebaseapp.com",
+			databaseURL: "https://seeknshare-fd878.firebaseio.com",
+			projectId: "seeknshare-fd878",
+			storageBucket: "seeknshare-fd878.appspot.com",
+			messagingSenderId: "383874502946",
+			appId: "1:383874502946:web:1eeb6c06707ecdca86557b"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			var storage = firebase.storage();
+			var storageRef = storage.ref();
+			</script>
+			<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+			  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+			<script src="scripts/contact.js"></script>
+			<script src="scripts/index.js"></script>
+			<script src="scripts/index2.js"></script>
+			  <script src="scripts/auth.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
@@ -235,5 +382,6 @@
 			<script src="js/owl.carousel.min.js"></script>
 			<script src="js/mail-script.js"></script>
 			<script src="js/main.js"></script>
+
 		</body>
 	</html>
